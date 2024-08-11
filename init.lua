@@ -13,8 +13,14 @@ vim.opt.wrap = true         -- 긴 줄을 자동으로 다음 줄로 감쌈
 vim.opt.autoindent = true   -- 자동 들여쓰기
 vim.opt.smartindent = true  -- 스마트 들여쓰기
 
-require'lspconfig'.clangd.setup{}
-require'lspconfig'.pyright.setup{}
+require'lspconfig'.clangd.setup{
+  cmd = { "/usr/bin/clangd-9" },  -- 여기 경로를 설치된 clangd 경로로 변경
+}
+
+--require'lspconfig'.pyright.setup{
+--  cmd = {"/home/blackpanther/.local/bin/pyright-langserver", "--stdio"},
+--}
+
 require'lspconfig'.neocmakelsp.setup{}
 
 require("config.lazy")
