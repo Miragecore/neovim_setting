@@ -1,6 +1,9 @@
 
 # shortcuts
 
+copy nvim folder to `~/.config/nvim`
+copy .zshrc to `~/`
+
 ## keymap.lua
 
 ```lua
