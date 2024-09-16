@@ -4,6 +4,8 @@
 copy nvim folder to `~/.config/nvim`
 copy .zshrc to `~/`
 
+Lazy Install/Update
+
 ## keymap.lua
 
 ```lua
